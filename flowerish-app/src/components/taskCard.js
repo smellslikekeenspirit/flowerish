@@ -8,8 +8,9 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Checkbox from '@material-ui/core/Checkbox';
-import {  TwitterShareButton, TwitterIcon} from "react-share";
-import { Link } from 'react-router-dom';
+/*import {  TwitterShareButton, TwitterIcon} from "react-share";
+import { Link } from 'react-router-dom';*/
+
 
 function GoButton (props) {
     return (
@@ -22,6 +23,7 @@ function GoButton (props) {
       </div>
     );
 }
+
 
 const useStyles = makeStyles({
     root: {
@@ -54,23 +56,14 @@ const useStyles = makeStyles({
           </CardContent>
         </CardActionArea>
         <CardActions>
+
             <Button size="medium">
               YO
             </Button>
-
+          
             <GoButton url={props.url}></GoButton>
 
-            <Button size="small">
-            <TwitterShareButton>
-                url={props.resourceUrl}
-                title={`I completed the challenge ${props.title} using flowerish`}
-                hashtag="#flowerish"
-                className={classes.socialMediaButton}
-                <TwitterIcon size={36} />
-            </TwitterShareButton>
-            </Button>
-
-            
+          
         </CardActions>
       </Card>
     );
