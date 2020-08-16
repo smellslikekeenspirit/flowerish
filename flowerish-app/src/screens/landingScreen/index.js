@@ -28,6 +28,11 @@ export const LandingScreen = () => {
     <div style={styles.layout}>
       <img src={flowerish}/>
       <Typography variant="h1">flowerish</Typography>
+      <form className={classes.root}>
+        <label>username</label>
+        <Input placeholder="username" inputProps={{ 'aria-label': 'description' }} />
+        <Input defaultValue="Error" error inputProps={{ 'aria-label': 'description' }} />
+      </form>
       <Link to="/home" style={styles.link}>
         <Button style={styles.button}>
           let's flourish!
