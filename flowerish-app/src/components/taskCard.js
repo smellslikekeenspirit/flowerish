@@ -33,7 +33,7 @@ const useStyles = makeStyles({
   });
   
 
-  export const TaskCard = (props) => {
+  export default function TaskCard(props) {
     const classes = useStyles();
   
     return (
@@ -55,7 +55,11 @@ const useStyles = makeStyles({
         </CardActionArea>
         <CardActions>
             <Button size="medium">
-              YO
+            <Checkbox
+        checked={checked}
+        onChange={handleChange}
+        inputProps={{ 'aria-label': 'primary checkbox' }}
+            />
             </Button>
 
             <GoButton url={props.url}></GoButton>
