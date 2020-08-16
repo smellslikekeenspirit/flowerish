@@ -8,4 +8,5 @@ to run, `cd flowerish-app` and run `yarn start`
 ![](document/landing.png)
 ![](document/home.png)
 ![](document/tasks.png)
+![](document/taskcards.PNG)
 ![](document/fishy.png)
