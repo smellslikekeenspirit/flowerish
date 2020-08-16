@@ -1,5 +1,5 @@
 import React from 'react';
-import {Typography, Button} from '@material-ui/core';
+import {Typography, Button, Input} from '@material-ui/core';
 import {Link} from 'react-router-dom';
 import flowerish from '../../assets/flowerish.png';
 
@@ -31,7 +31,7 @@ export const LandingScreen = () => {
     <div style={styles.layout}>
       <img src={flowerish} style={styles.flowerish}/>
       <Typography variant="h1">flowerish</Typography>
-      <form className={classes.root}>
+      <form >
         <label>username</label>
         <Input placeholder="username" inputProps={{ 'aria-label': 'description' }} />
         <Input defaultValue="Error" error inputProps={{ 'aria-label': 'description' }} />

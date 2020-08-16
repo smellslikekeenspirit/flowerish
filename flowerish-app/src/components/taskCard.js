@@ -59,14 +59,7 @@ const useStyles = makeStyles({
           </CardContent>
         </CardActionArea>
         <CardActions>
-
-            <Button size="medium">
-              Close
-            </Button>
-          
-            <GoButton url={list.url}></GoButton>
-
-          
+          <GoButton url={list.url}></GoButton>
         </CardActions>
       </Card>
     );
