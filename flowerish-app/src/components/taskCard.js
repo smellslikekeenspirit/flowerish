@@ -68,7 +68,7 @@ const useStyles = makeStyles({
             <Button size="small">
             <TwitterShareButton>
                 url={props.resourceUrl}
-                title={"I completed the challenge: " + {props.title} + " using flowerish"}
+                title={`I completed the challenge: ${props.title} using flowerish`}
                 hashtag="#flowerish"
                 className={classes.socialMediaButton}
                 <TwitterIcon size={36} />

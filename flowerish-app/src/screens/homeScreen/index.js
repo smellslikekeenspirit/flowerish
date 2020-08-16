@@ -32,8 +32,8 @@ export const HomeScreen = () => {
   const list = (anchor) => (
     <div onClick={toggleDrawer(false)} onKeyDown={toggleDrawer(false)}>
       <Typography>hello</Typography>
-        <Typography>hello</Typography>
-        <Typography>hello</Typography>
+      <Typography>hello</Typography>
+      <Typography>hello</Typography>
     </div>
   )
 
