@@ -1,7 +1,7 @@
 
 let Tasks_Sustainability = [];
 let Tasks_Education = [];
-let Tasks_Petitions = [];
+let Tasks_Action = [];
 
 // Creating task objects constructor
 
@@ -72,8 +72,134 @@ Tasks_Sustainability.push(TaskItem(
 
 
 // for education tasks
+Tasks_Education.push(TaskItem(
+    "Learn: What's Greenwashing?",
+    "Just what is greenwashing? How does it relate to corporations who "+
+    "have an outsized impact on the environment? Find out from this article.",
+    "https://www.businessnewsdaily.com/10946-greenwashing.html",
+    "assets/education.png",
+    "lightbulb"
+
+));
+
+Tasks_Education.push(TaskItem(
+    "Learn: NAACP and Climate Justice",
+    "How does climate change and environmental justice impact the "+
+    "Black community? What has the NAACP been up to regarding environmental justice?",
+    "https://www.naacp.org/issues/environmental-justice/",
+    "assets/education.png",
+    "lightbulb"
+
+));
+
+Tasks_Education.push(TaskItem(
+    "Learn: NAACP and Climate Justice",
+    "How does climate change and environmental justice impact the "+
+    "Black community? What has the NAACP been up to regarding environmental justice?",
+    "https://www.naacp.org/issues/environmental-justice/",
+    "assets/education.png",
+    "lightbulb"
+
+));
+
+Tasks_Education.push(TaskItem(
+    "Learn: What are Businesses that Could Do Better?",
+    "Outside of huge scandals, the headlines don't often discuss companies who do well or poorly "+
+    "in terms of sustainability and being environmentally friendly. Find out who's doing what!",
+    "https://www.treehugger.com/corporate-responsibility-4846047",
+    "assets/education.png",
+    "lightbulb"
+
+));
+
+Tasks_Education.push(TaskItem(
+    "Learn: Uyghur Forced Labor and Clothing Companies",
+    "The Uyghurs have been an oppressed minority group in China. Learn how clothing "+
+    " companies have been taking advantage.",
+    "https://uhrp.org/press-release/press-release-180-orgs-demand-apparel-brands-end-complicity-uyghur-forced-labour.html",
+    "assets/education.png",
+    "lightbulb"
+
+));
+Tasks_Education.push(TaskItem(
+    "Learn: Whiteness and The Green Movement",
+    "Many environmental activists are white or have created a white-centric environment."+
+    " Learn about POC and minority activists and their progress as well as "+
+    " the response of others from minority groups.",
+    "https://www.theguardian.com/sustainable-business/2014/oct/09/sp-minorities-race-white-poverty-environment-social-justice",
+    "assets/education.png",
+    "lightbulb"
+
+));
+Tasks_Education.push(TaskItem(
+    "Learn: What is White Environmentalism?",
+    "What is white environmentalism? Learn about it in this podcast.",
+    "https://www.upstreamsolutions.org/podcasts/from-white-environmentalism-to-anti-racism",
+    "assets/education.png",
+    "lightbulb"
+
+));
+
+
 
 // for activism/etc tasks
 
+Tasks_Action.push(TaskItem(
+    "Take Action: Learn About Sustainability",
+    "If you're willing to spend a little (slightly more than $1), you can subscribe to this"+
+    " weekly sustainability newsletter.",
+    "https://manage.campaignzee.com/4knBvS4LGf",
+    "assets/take_action.png",
+    "three hands raised"
+
+));
+
+Tasks_Action.push(TaskItem(
+    "Take Action: Send Letters to the Government",
+    "Use this website to send your local or national representatives emails and letters about climate justice "+
+    "and environmental topics you are passionate about",
+    "https://environmental-action.webaction.org/p/dia/action4/common/public/index",
+    "assets/take_action.png",
+    "three hands raised"
+
+));
+
+Tasks_Action.push(TaskItem(
+    "Take Action: Petitions/Donations for Uyghur Muslims",
+    "Uyghur Muslims have been facing many horrible conditions and instances of "+
+    " discrimination. Additionally they have been used as forced labor in making unsustainable "+
+    "fast fashion. Follow the link to educate yourself and sign petitions.",
+    "https://uyghurs.carrd.co/",
+    "assets/take_action.png",
+    "three hands raised"
+
+));
+
+Tasks_Action.push(TaskItem(
+    "Take Action: Donate/Volunteer If You Can",
+    "If you are able, consider donating to or volunteering for "+
+    "Communities for a Better Environment.",
+    "https://manage.campaignzee.com/4knBvS4LGf",
+    "assets/take_action.png",
+    "three hands raised"
+
+));
+
+Tasks_Action.push(TaskItem(
+    "Take Action: Sign a No-Shopping Pledge",
+    "Every little bit counts: try some time away from supporting the fast fashion industry.",
+    "https://manage.campaignzee.com/4knBvS4LGf",
+    "assets/take_action.png",
+    "three hands raised"
+
+));
+
+
 
 // choose a task
+
+function returnTask(tasks_category){
+    var task = task_category[Math.floor(Math.random() * task_category.length)];
+    return task
+
+}
