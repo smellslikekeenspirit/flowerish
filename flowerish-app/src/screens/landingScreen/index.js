@@ -25,7 +25,7 @@ const styles = {
 export const LandingScreen = () => {
   return(
     <div style={styles.layout}>
-      <Typography >flowerish</Typography>
+      <Typography variant="h1">flowerish</Typography>
       <Link to="/home" style={styles.link}>
         <Button style={styles.button}>
           let's flourish!

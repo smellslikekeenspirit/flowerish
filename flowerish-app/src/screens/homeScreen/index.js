@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {Typography, Drawer, Button} from '@material-ui/core';
 import waves from '../../assets/waves.png';
 import {TaskCard} from '../../components/taskCard.js';
-import {Tasks_Sustainability, Tasks_Education, }
+import {Tasks_Sustainability, Tasks_Education, Tasks_Action, returnTask} from '../../components/tasks.js';
 
 const styles = {
   home: {
