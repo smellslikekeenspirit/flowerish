@@ -29,15 +29,21 @@ export const HomeScreen = () => {
       return;
     }
     setOpen(open);
+  
   };
+
+  let susTask = returnTask(Tasks_Sustainability);
+  let eduTask = returnTask(Tasks_Education);
+  let actTask = returnTask(Tasks_Action);
 
   const list = (anchor) => (
     <div onClick={toggleDrawer(false)} onKeyDown={toggleDrawer(false)}>
-      <Typography>hello</Typography>
-      <Typography>hello</Typography>
-      <Typography>hello</Typography>
+      <TaskCard props={susTask}></TaskCard>
+      <TaskCard props={eduTask}></TaskCard>
+      <TaskCard props={actTask}></TaskCard>
     </div>
   )
+
 
   return(
     <div style={styles.home}>
