@@ -8,15 +8,17 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Checkbox from '@material-ui/core/Checkbox';
-/*import {  TwitterShareButton, TwitterIcon} from "react-share";
-import { Link } from 'react-router-dom';*/
+import Link from '@material-ui/core/Link';
+
+/*import {  TwitterShareButton, TwitterIcon} from "react-share";*/
+//import { Link } from 'react-router-dom';
 
 
 function GoButton (props) {
     return (
       <div>
         <Button>
-        <Link to = {props.url}>
+        <Link href = {props.url}>
             <span>Go</span>
         </Link>
         </Button>
@@ -37,31 +39,32 @@ const useStyles = makeStyles({
 
   export const TaskCard = (props) => {
     const classes = useStyles();
-  
+    const list = props.list;
+    
     return (
       <Card className={classes.root}> 
         <CardActionArea>
           <CardMedia
             className={classes.media}
-            image= {props.imageSrc}
-            title= {props.imageTitle}
+            image={require(`../assets/${list.imageSrc}`)}
+            title={list.imageTitle}
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
-              {props.taskTitle}
+              {list.taskTitle}
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              {props.taskDescription}
+              {list.taskDescription}
             </Typography>
           </CardContent>
         </CardActionArea>
         <CardActions>
 
             <Button size="medium">
-              YO
+              Close
             </Button>
           
-            <GoButton url={props.url}></GoButton>
+            <GoButton url={list.url}></GoButton>
 
           
         </CardActions>

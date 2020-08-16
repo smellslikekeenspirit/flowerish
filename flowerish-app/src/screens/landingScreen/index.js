@@ -1,11 +1,11 @@
 import React from 'react';
 import {Typography, Button} from '@material-ui/core';
 import {Link} from 'react-router-dom';
-import flowerish from '../../assets/favorish.png';
+import flowerish from '../../assets/flowerish.png';
 
 const styles = {
   layout: {
-    backgroundColor: '#EBF3F5',
+    backgroundColor: '#002C41',
     color: '#002C41',
     display: 'flex',
     justifyContent: 'space-around',

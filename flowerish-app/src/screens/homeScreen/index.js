@@ -35,12 +35,14 @@ export const HomeScreen = () => {
   let susTask = returnTask(Tasks_Sustainability);
   let eduTask = returnTask(Tasks_Education);
   let actTask = returnTask(Tasks_Action);
+  console.log(susTask);
+  console.log(eduTask);
 
   const list = (anchor) => (
     <div onClick={toggleDrawer(false)} onKeyDown={toggleDrawer(false)}>
-      <TaskCard props={susTask}></TaskCard>
-      <TaskCard props={eduTask}></TaskCard>
-      <TaskCard props={actTask}></TaskCard>
+      <TaskCard list={susTask}></TaskCard>
+      <TaskCard list={eduTask}></TaskCard>
+      <TaskCard list={actTask}></TaskCard>
     </div>
   )
 
