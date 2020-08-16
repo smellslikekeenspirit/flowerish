@@ -1,5 +1,5 @@
 import React from 'react';
-import {Typography, Button, Input} from '@material-ui/core';
+import {Button, TextField} from '@material-ui/core';
 import {Link} from 'react-router-dom';
 import flowerish from '../../assets/flowerish.png';
 
@@ -17,30 +17,44 @@ const styles = {
   },
   flowerish: {
     backgroundColor: '#EBF3F5',
+    width: '40%',
   },
   button: {
+    width: '100%',
+    marginTop: '5%',
     borderRadius: '10px',
     backgroundColor: '#78A1BB',
     color: '#FFFFFF',
-    
   },
+  form: {
+    display: 'flex',
+    flexDirection: 'column',
+    width: '40%',
+  },
+  username: {
+    backgroundColor: 'white',
+    borderRadius: '10px',
+  }
 }
 
 export const LandingScreen = () => {
   return(
     <div style={styles.layout}>
       <img src={flowerish} style={styles.flowerish}/>
-      <Typography variant="h1">flowerish</Typography>
-      <form >
-        <label>username</label>
-        <Input placeholder="username" inputProps={{ 'aria-label': 'description' }} />
-        <Input defaultValue="Error" error inputProps={{ 'aria-label': 'description' }} />
+      <form style={styles.form}>
+        <TextField 
+          label="username"
+          variant="filled"
+          placeholder="flourish@gmail.com" 
+          type="text" 
+          style={styles.username}
+        />
+        <Link to="/home" style={styles.link}>
+          <Button style={styles.button}>
+            let's flourish!
+          </Button>
+        </Link>
       </form>
-      <Link to="/home" style={styles.link}>
-        <Button style={styles.button}>
-          let's flourish!
-        </Button>
-      </Link>
     </div>
   );
 };
