@@ -1,28 +1,33 @@
 import React from 'react';
 import {Typography} from '@material-ui/core';
-import lightWave from '../../assets/lightwave.png';
-import darkWave from '../../assets/darkwave.png';
+import waves from '../../assets/waves.png';
 
 const styles = {
-  lightWave: {
+  home: {
+    height: '100vh',
+    display: 'flex',
+    flexDirection: 'column',
+  },
+  waves: {
     backgroundColor: '#EBF3F5',
   },
-  darkWave: {
-
+  body: {
+    flexGrow: 1,
+    backgroundColor: '#002C41',
   }
 }
 
 export const HomeScreen = () => {
   return(
-    <div>
+    <div style={styles.home}>
       <div>
 
       </div>
-      <img src={lightWave} style={styles.lightWave}/>
+      <img src={waves} style={styles.waves}/>
       <div style={styles.body}>
-        <img src={darkWave} />
+        <Typography>what</Typography>
       </div>
-    </div>
+</div>
     
 
   );
