@@ -17,7 +17,6 @@ const styles = {
   flowerish: {
     backgroundColor: '#EBF3F5',
     width: 600,
-    height: 600,
     resizeMode: 'contain',
   },
   input: {
@@ -49,7 +48,7 @@ export const LandingScreen = () => {
   return(
     <div style={styles.layout}>
       <Box>
-      <img src={flowerish} className='center' style={styles.flowerish}/>
+      <img src={flowerish} style={styles.flowerish}/>
       <Typography variant="h1">flowerish</Typography>
       </Box>
       <Box  display='flex' flexDirection="column" alignItems='center'>
