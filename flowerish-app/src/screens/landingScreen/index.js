@@ -15,6 +15,9 @@ const styles = {
   link: {
     textDecoration: 'none',
   },
+  flowerish: {
+    backgroundColor: '#EBF3F5',
+  },
   button: {
     borderRadius: '10px',
     backgroundColor: '#78A1BB',
@@ -26,7 +29,7 @@ const styles = {
 export const LandingScreen = () => {
   return(
     <div style={styles.layout}>
-      <img src={flowerish}/>
+      <img src={flowerish} style={styles.flowerish}/>
       <Typography variant="h1">flowerish</Typography>
       <form className={classes.root}>
         <label>username</label>
