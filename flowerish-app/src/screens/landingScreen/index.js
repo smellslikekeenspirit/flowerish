@@ -1,7 +1,6 @@
 import React from 'react';
 import {Typography, Button} from '@material-ui/core';
 import {Link} from 'react-router-dom';
-import flowerish from '../../assets/favorish.png';
 
 const styles = {
   layout: {
@@ -26,7 +25,6 @@ const styles = {
 export const LandingScreen = () => {
   return(
     <div style={styles.layout}>
-      <img src={flowerish}/>
       <Typography variant="h1">flowerish</Typography>
       <Link to="/home" style={styles.link}>
         <Button style={styles.button}>
