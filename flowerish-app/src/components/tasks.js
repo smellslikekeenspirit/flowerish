@@ -144,8 +144,7 @@ export const Tasks_Action = [
 
 // choose a task
 
-function returnTask(tasks_category) {
-    var task = task_category[Math.floor(Math.random() * task_category.length)];
+export const returnTask = (tasks_category) => {
+    var task = tasks_category[Math.floor(Math.random() * tasks_category.length)];
     return task
-
 }
