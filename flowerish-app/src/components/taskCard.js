@@ -9,17 +9,15 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Checkbox from '@material-ui/core/Checkbox';
 import {  TwitterShareButton, TwitterIcon} from "react-share";
-import { ExternalLink } from 'react-external-link';
-
-
+import { Link } from 'react-router-dom';
 
 function GoButton (props) {
     return (
       <div>
         <Button>
-        <ExternalLink href = {props.url}>
+        <Link to = {props.url}>
             <span>Go</span>
-        </ExternalLink>
+        </Link>
         </Button>
       </div>
     );
@@ -34,6 +32,7 @@ const useStyles = makeStyles({
     },
   });
   
+
   export default function TaskCard(props) {
     const classes = useStyles();
   
@@ -68,7 +67,7 @@ const useStyles = makeStyles({
             <Button size="small">
             <TwitterShareButton>
                 url={props.resourceUrl}
-                title={`I completed the challenge: ${props.title} using flowerish`}
+                title={`I completed the challenge ${props.title} using flowerish`}
                 hashtag="#flowerish"
                 className={classes.socialMediaButton}
                 <TwitterIcon size={36} />

@@ -1,6 +1,6 @@
-let Tasks_Sustainability = [];
-let Tasks_Education = [];
-let Tasks_Action = [];
+export const Tasks_Sustainability = [];
+export const Tasks_Education = [];
+export const Tasks_Action = [];
 
 // Creating task objects constructor
 
@@ -24,7 +24,8 @@ Tasks_Sustainability.push(TaskItem(
     "assets/sustainability.png",
     "recyclingsymbol"
 ));
-Tasks_Sustainability.push(TaskItem()
+
+Tasks_Sustainability.push(TaskItem(
     "Go Reusable: Metal Straw",
     "Today is a great day to use a reusable metal/silicone straw. "+
     "If you don't have one, try not using a disposable straw today, or going for " + 
@@ -32,8 +33,8 @@ Tasks_Sustainability.push(TaskItem()
     "https://www.ecowatch.com/eco-friendly-drinking-straw-alternatives-2571689759.html",
     "assets/sustainability.png",
     "recyclingsymbol"
-    
 ));
+
 Tasks_Sustainability.push(TaskItem(
     "Go Recyclable: Terracycle",
     "Today is a great day to try out TerraCycle. You can look for "+
